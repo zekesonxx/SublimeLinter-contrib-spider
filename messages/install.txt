@@ -1,0 +1,10 @@
+SublimeLinter-contrib-spider
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to spider.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/zekesonxx/SublimeLinter-contrib-spider
