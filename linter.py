@@ -2,8 +2,8 @@
 # linter.py
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
-# Written by Owner
-# Copyright (c) 2014 Owner
+# Written by Zeke Sonxx
+# Copyright (c) 2014 Zeke Sonxx <github.com/zekesonxx>
 #
 # License: MIT
 #

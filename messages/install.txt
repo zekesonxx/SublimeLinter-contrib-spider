@@ -8,3 +8,5 @@ Before this plugin will activate, you *must*
 follow the installation instructions here:
 
 https://github.com/zekesonxx/SublimeLinter-contrib-spider
+
+Spider's error locations are unhelpful, but this tool can't really fix that.
