@@ -10,16 +10,17 @@
 
 """This module exports the Spider plugin class."""
 
-from SublimeLinter.lint import Linter, util
+from SublimeLinter.lint import NodeLinter, util
 
 
-class Spider(Linter):
+class Spider(NodeLinter):
 
     """Provides an interface to spider."""
 
     syntax = 'spiderscript'
-    cmd = 'spider -c --disable-source-map'
-    executable = None
+    cmd = ('spider', '-c', '--disable-source-map')
+    executable = 'spider'
+    npm_name = 'spider'
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.0.7'
@@ -30,7 +31,10 @@ class Spider(Linter):
     error_stream = util.STREAM_STDOUT
     selectors = {}
     word_re = None
-    defaults = {}
+    defaults = {
+        'enable_if_dependency': True,
+        'disable_if_not_dependency': True
+    }
     inline_settings = None
     inline_overrides = None
     comment_re = r'\s*/[/*]'
